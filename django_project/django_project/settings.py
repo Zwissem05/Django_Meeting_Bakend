@@ -11,10 +11,17 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
+#load the file dotenv
+load_dotenv(BASE_DIR / '.env')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
@@ -88,12 +95,12 @@ REST_FRAMEWORK = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'meetings_ev4c',        # Remplace par le nom de ta base
-        'USER': 'meetings_ev4c_user',                 # Ton utilisateur PostgreSQL
-        'PASSWORD': 'qYZ4ahNsoG2mJ5E2hDH8ixXTAAyOLVzY',     # Ton mot de passe
-        'HOST': 'dpg-d585hp2li9vc739s6120-a.oregon-postgres.render.com', # L'adresse fournie par Render
-        'PORT': '5432',                  # Souvent 5432
+        'ENGINE': os.getenv('ENGINE'),
+        'NAME': os.getenv('NAME'),        # Remplace par le nom de ta base
+        'USER': os.getenv('USER'),                # Ton utilisateur PostgreSQL
+        'PASSWORD': os.getenv('PASSWORD'),    # Ton mot de passe
+        'HOST': os.getenv('HOST'), # L'adresse fournie par Render
+        'PORT':os.getenv('PORT'),                 # Souvent 5432
     }
 }
 
