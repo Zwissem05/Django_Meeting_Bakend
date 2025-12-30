@@ -8,13 +8,8 @@ class MeetinSerialzer(serializers.ModelSerializer):
      class Meta:
           model=Meeting
           fields= '__all__'
-     def create(self,validated_data):
-            meeting=Meeting.objects.create(
-            title=validated_data['title'],
-            user=self.context['request'].user,
 
-            )
-            return meeting
+          
 class UserRegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -25,7 +20,7 @@ class UserRegisterSerializer(serializers.ModelSerializer):
     def create(self,validated_data):
             user=User.objects.create_user(
                 username=validated_data['username'],
-                email= validated_data['emaile'],
+                email= validated_data['email'],
                 password=validated_data['password']
             )
             return user

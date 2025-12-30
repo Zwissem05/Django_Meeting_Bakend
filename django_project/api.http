@@ -1,0 +1,60 @@
+###
+PATCH http://127.0.0.1:8000/api/updatemeeting/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY3MTMyNjgwLCJpYXQiOjE3NjcxMzIzODAsImp0aSI6IjU3MDdhNTU1YTk0ZDRiY2RiYmE3MmU1YTBkNzAyZmIzIiwidXNlcl9pZCI6IjUifQ.US6LC-CyRDY7wJgbAUAFoPlJLqDa3LChP0YlMQEeI5Y
+
+{
+"title":"ALG2",
+"notes":"" 
+}
+
+###
+
+POST http://127.0.0.1:8000/api/token/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Weswes",
+    "email":"raniasali2021@gmail.com",
+    "password":"123456789"
+}
+
+###
+
+###
+PATCH http://127.0.0.1:8000/api/updatemeeting/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY3MTMyODA4LCJpYXQiOjE3NjcxMzI1MDgsImp0aSI6IjRhZTA1MjRkZDVjNTRkM2E5M2JmMzlhZWMyZDdlOWU4IiwidXNlcl9pZCI6IjYifQ.EDZdZD1YknftKbj03sW6EYpkNduJV2FgFAsqoKz7WCM
+
+{
+"title":"ALG3",
+"notes":"" 
+}
+
+###
+
+
+POST http://127.0.0.1:8000/api/token/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Weswes",
+    "email":"raniasali2021@gmail.com",
+    "password":"123456789"
+}
+
+###
+POST http://127.0.0.1:8000/api/token/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Wissem",
+    "email":"raniasali@gmail.com",
+    "password":"123456789"
+}
+
+###
+
+
+
+
