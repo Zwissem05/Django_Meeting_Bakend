@@ -1,1 +1,6 @@
+# Ignorer l'environnement virtuel
+venv/
+env/
+
+# Ignorer les variables d'environnement (secrets)
 .env
