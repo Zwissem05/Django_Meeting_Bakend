@@ -58,16 +58,16 @@ Content-Type: application/json
 ###
 GET http://127.0.0.1:8000/api/search/?date=2025-12-31 HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY3MjIwNzU1LCJpYXQiOjE3NjcyMjA0NTUsImp0aSI6IjdlZmNjZjZlOGJmYzQ1MWI4MzY2MjE4MGUxZmFjMzhkIiwidXNlcl9pZCI6IjYifQ.dqM6_VeSKtCwJv2c4j3M5GuZrWzavQh4q9OKuMq5xCY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY3MjIyMTA3LCJpYXQiOjE3NjcyMjE4MDcsImp0aSI6IjFiY2Q2NjRmNDUxYTQ3ZjU4YmZlNzViYTJmZDE4NDE2IiwidXNlcl9pZCI6IjYifQ.AjHgzMGnhiBD9kPC6OTPGR5X_NzRBolrQZ14KKNLcag
 ###
 
 ###
 POST http://127.0.0.1:8000/api/meeting/ HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY3MjIwMDMyLCJpYXQiOjE3NjcyMTk3MzIsImp0aSI6ImY5NzY3NWY2ZmI5NDQzN2M5YWVkZjZhYjc4ZWVmNWVhIiwidXNlcl9pZCI6IjYifQ.sMVY1JlvpzzvnBVNByJYpy5TGmi39QcUiE3YyyGImQM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY3MjIyMTA3LCJpYXQiOjE3NjcyMjE4MDcsImp0aSI6IjFiY2Q2NjRmNDUxYTQ3ZjU4YmZlNzViYTJmZDE4NDE2IiwidXNlcl9pZCI6IjYifQ.AjHgzMGnhiBD9kPC6OTPGR5X_NzRBolrQZ14KKNLcag
 
 {
-   "title":"ANUM"
+   "title":"ORGA"
 }
 
 
